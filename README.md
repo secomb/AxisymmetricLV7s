@@ -32,4 +32,4 @@ MCMC_Summary000.txt: Summary of MCMC statistics, including relative standard dev
 Histogram_xx000.txt: Data used to generate MCMC histograms  
 chisqVals000.txt: Variation of objective function during optimization 
 
-This code runs under Visual Studio 22 C++. Please contact Timothy W. Secomb secomb@arizona.edu if futher informaton is needed.
+This code runs under Visual Studio 22 C++. It is freely available for non-commercial use, provided appropriate acknowledgement is given. Commercial users please contact us before using this program. No assurance is given that it is free of errors and any use is at the user’s risk. Please contact Timothy W. Secomb secomb@arizona.edu with questions.
