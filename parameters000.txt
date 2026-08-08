@@ -1,0 +1,164 @@
+// Run parameter optimization? Choose on or off
+Optimize = off
+// Skip this file? Choose on or off
+Skip = off
+// Use Markov Chain Monte Carlo to find parameter distributions
+MCMC = off
+// number of steps for the Markov process
+NstepsMarkov = 10000
+// number of steps for the Markov process "burn-in"
+NburnMarkov = 2000
+// number of steps between reports of Markov statistics
+NreportMarkov = 2000
+// standard deviation for normal random proposal steps
+sigmaMarkov = 0.01
+// Use simplified pulmonary model? Choose on or off
+SimpPulm = on
+// Calculate fiber averages? Choose on or off
+CalcFiber = off
+// Calculate sensitivity matrix with current parameters? Choose on or off
+SensitivityMatrix = off
+
+**** Input parameters ****
+Ncycles = 20.00000000
+Ncycles_show = 3.00000000
+Nmu = 10.00000000
+Nnu = 10.00000000
+Nr = 10.00000000
+dtMax = 0.00105400
+dtRecord = 0.00527000
+rho = 1.05000000
+Tc = 1.05400000
+Ta = 0.52700000
+Tca = 0.21100000
+Tca_shift = 0.15000000
+a0 = 4.22810633
+muin0 = 0.39495850
+muout0 = 0.62689949
+nu_up = 1.11000000
+RefVolLV = 45.00000000
+WallVolLV = 89.52000000
+LAtoSA = 1.92300000
+psi_in_b0 = 1.48000000
+psi_out_b0 = -1.13000000
+Ls0 = 1.86000000
+Lsmax = 2.27000000
+Lsw = 0.30000000
+km = 194.15567696
+ipar_km = 1
+kav = 64.62222049
+ipar_kav = 1
+kp = 0.00000000
+kdfac = 0.75000000
+kv = 0.02500000
+c1 = 0.30000000
+bff = 6.05492957
+ipar_bff = 2
+bxx = 1.98725893
+ipar_bxx = 2
+bfx = 0.65206933
+ipar_bfx = 2
+rin0_rv = 3.90796321
+rout0_rv = 4.53752897
+f_rv = 0.30000000
+RefVolRV = 75.00000000
+WallVolRV = 42.40000000
+km_rv = 63.74636028
+ipar_km_rv = 3
+kav_rv = 21.27379892
+ipar_kav_rv = 3
+kv_rv = 0.02500000
+c1_rv = 0.30000000
+br_rv = 1.76411935
+ipar_br_rv = 4
+bperp_rv = 5.37505113
+ipar_bperp_rv = 4
+rin0_la = 2.12156884
+rout0_la = 2.36912984
+RefVolLA = 40.00000000
+WallVolLA = 15.70000000
+km_la = 22.48704753
+ipar_km_la = 5
+kav_la = 7.50945037
+ipar_kav_la = 5
+kv_la = 0.02500000
+c1_la = 0.30000000
+br_la = 6.41172787
+ipar_br_la = 6
+bperp_la = 19.53573335
+ipar_bperp_la = 6
+rin0_ra = 1.65534427
+rout0_ra = 1.99620648
+RefVolRA = 19.00000000
+WallVolRA = 14.32000000
+km_ra = 8.08209519
+ipar_km_ra = 7
+kav_ra = 2.69403173
+ipar_kav_ra = 7
+kv_ra = 0.02500000
+c1_ra = 0.30000000
+br_ra = 1.46053261
+ipar_br_ra = 8
+bperp_ra = 4.45006034
+ipar_bperp_ra = 8
+VA_aovo = 3.50000000
+VL_aov = 1.50000000
+VA_mivo = 5.00000000
+VL_miv = 5.00000000
+VA_puvo = 3.00000000
+VL_puv = 1.50000000
+VA_tcvo = 8.00000000
+VL_tcv = 5.00000000
+VA_aovc = 0.00100000
+VA_mivc = 0.00100000
+VA_puvc = 0.00100000
+VA_tcvc = 0.00100000
+Kaovo = 500.00000000
+Kmivo = 100.00000000
+Kpuvo = 500.00000000
+Ktcvo = 100.00000000
+Kaovc = 500.00000000
+Kmivc = 100.00000000
+Kpuvc = 1000.00000000
+Ktcvc = 100.00000000
+VA_pv = 4.50000000
+VL_pv = 5.00000000
+VA_sv = 4.50000000
+VL_sv = 5.00000000
+Laorta = 50.00000000
+A00 = 4.00000000
+A01 = 0.03000000
+Gaorta0 = 0.00000961
+Gaorta1 = -0.02000000
+tpulse = 0.02000000
+impedancefac = 1.01000000
+Rsp = 0.12622654
+ipar_Rsp = 9
+Rsv = 0.00339739
+ipar_Rsv = 10
+Rpa = 0.00150000
+Rpv = 0.00741355
+ipar_Rpv = 12
+Csa = 4.32200078
+ipar_Csa = 13
+Csv = 392.00000000
+Cpp = 69.27442866
+ipar_Cpp = 14
+Pext = 0.00000000
+Psp0 = 10.00000000
+Psv0 = 1.19713213
+ipar_Psv0 = 15
+Ppp0 = 2.00000000
+Ppv0 = 1.00000000
+Tdlrv = 0.00000000
+Sdlrv = 0.00000000
+
+// Initial estimates of multiplicative factor, lower and upper bounds
+// Needed if Optimize = on or if MCMC = on
+xx = [1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.]
+// Use these for Optimize = on
+//xxlb = [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1]
+//xxub = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+// Use these for MCMC=on
+xxlb = [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5]
+xxub = [1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5]

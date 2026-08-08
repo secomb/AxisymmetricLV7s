@@ -1,0 +1,104 @@
+// Normalize outputs to target values? Choose on or off
+Normalize = on
+// Tolerance for convergence of objective function (default 0.0001)
+tol = 0.0001
+// Maximum number of iterations in Levenberg-Marquardt (default 20)
+Niter = 30
+
+// *** Target variables: if sigma_rel is not defined, it is not included **
+// Volumes (ml)
+// EDV/ESV = end-diastolic/systolic volume
+LVEDV = 151
+sigma_rel_LVEDV = 0.0316
+LVESV
+LAEDV = 80
+sigma_rel_LAEDV = 0.1
+LAESV = 40
+sigma_rel_LAESV = 0.1
+RVEDV = 181
+sigma_rel_RVEDV = 0.0316
+RVESV
+RAEDV = 52
+sigma_rel_RAEDV = 0.1
+RAESV = 19
+sigma_rel_RAESV = 0.1
+SV = 106
+sigma_rel_SV = 0.01
+
+// Lengths (cm)
+// LA/SA = long/short axis; WT = wall thickness at pi/2
+LVLAEDL
+LVLAESL
+LVSAEDD
+LVSAESD
+LVEDWT
+LVESWT
+
+// Maximum flows (ml/s)
+// PV = pulmonary vein, LV/RVOTFLOW = outflows
+PVMAXFLOW
+LVOTFLOW
+RVOTFLOW
+
+// Velocities (cm/s)
+// E/TE = mitral/tricuspid valve
+// EPRIME = d/dt (base-apex length)
+EWAVEMAXVEL = 80
+sigma_rel_EWAVEMAXVEL = 0.1
+TEWAVEMAXVEL
+EPRIME = 8.5
+VELAORTAWAVE = 400
+//sigma_rel_VELAORTAWAVE = 0.1
+
+// Ratios (non-dimensional)
+// ETOA as E/(E + A) A max 2nd half of diastole, during atrial contraction
+// TETOA tricuspid
+ETOA = 1.4
+sigma_rel_ETOA = 0.1
+TETOA = 1.32
+sigma_rel_TETOA = 0.1
+ETOEPRIME = 6.5
+//sigma_rel_ETOEPRIME = 0.1
+LATOSA
+
+// Pressures (mmHg)
+// SYST/DIAST = Pas max/min, PV = Ppv 
+SYSTBP = 120
+sigma_rel_SYSTBP = 0.0316
+DIASTBP = 73.8
+sigma_rel_DIASTBP = 0.0316
+PVMEAN = 9
+sigma_rel_PVMEAN = 0.1
+PLVMAX = 130
+sigma_rel_PLVMAX = 0.1
+PLVED = 9
+sigma_rel_PLVED = 0.1
+PRVMAX = 25
+sigma_rel_PRVMAX = 0.1
+PRVED = 4
+sigma_rel_PRVED = 0.1
+PPAMEAN = 15
+sigma_rel_PPAMEAN = 0.1
+PPAED = 9
+sigma_rel_PPAED = 0.1
+PRAMEAN = 3
+sigma_rel_PRAMEAN = 0.1
+PAOMEAN
+PLAMEAN = 8
+sigma_rel_PLAMEAN = 0.1
+PAOMAX = 110
+//sigma_rel_PAOMAX = 0.1
+
+// Times (s)
+// start to end of outflow waveform
+LVOTSTART_END
+RVOTSTART_END
+
+// Strains (non-dimensional)
+// GLS/GCS = average longitudinal/circumferential strains
+// Other chambers - radial strain 
+LVGLS
+LVGCS
+RVSTRAIN
+LASTRAIN
+RASTRAIN
